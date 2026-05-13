@@ -13,7 +13,16 @@
         <h2 class="text-uppercase mb-4">Current Series</h2>
 
         <div class="row">
-            {{-- Qui le card dei fumetti --}}
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+                @foreach ($comics as $comic)
+                    <div class="col">
+                        <div class="comic-card">
+                            <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                            <h5 class="text-uppercase mt-3">{{ $comic['series'] }}</h5>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </div>
 </section>
