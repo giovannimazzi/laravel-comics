@@ -16,13 +16,14 @@
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 pt-3">
             @foreach ($comics as $comic)
                 <div class="col">
-                    <div class="comic-card">
+                   {{--  <div class="comic-card">
                         <img class="img-fluid w-100" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
 
                         <h6 class="text-uppercase mt-3 small">
                             {{ $comic['series'] }}
                         </h6>
-                    </div>
+                    </div> --}}
+                    <x-comic-card :comic="$comic" />
                 </div>
             @endforeach
         </div>
