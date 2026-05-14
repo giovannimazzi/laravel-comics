@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'DC Comics - Collectibles')
+@section('favicon', '📚')
 
 @section('content')
 
