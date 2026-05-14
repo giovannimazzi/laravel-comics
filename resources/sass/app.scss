@@ -1,8 +1,66 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url("https://fonts.bunny.net/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+.navbar-nav .nav-link {
+    border-bottom: 4px solid transparent;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--bs-primary) !important;
+    border-bottom-color: var(--bs-primary);
+}
+
+.jumbotron {
+    height: 400px;
+    background-image: url("../img/jumbotron.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+
+.section-label {
+    top: -25px;
+    left: 12px;
+}
+
+.comic-card img {
+    aspect-ratio: 8 / 13;
+    object-fit: cover;
+    object-position: top;
+}
+
+.shop-bar-img {
+    height: 55px;
+    max-width: 55px;
+    object-fit: contain;
+}
+
+.footer-main {
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.footer-main ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-logo {
+    background-image: url("../img/dc-logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 520px;
+}
+
+.footer-bottom {
+    background-color: #303030;
+}
